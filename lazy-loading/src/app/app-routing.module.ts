@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
+import { TypographyComponent } from './typography/typography.component';
+import { ButtonsComponent } from './buttons/buttons.component';
 const routes: Routes = [
   {
     path: 'customers',
@@ -19,7 +20,9 @@ const routes: Routes = [
     path: '',
     redirectTo: '',
     pathMatch: 'full'
-  }
+  },
+  {path:"typography", component:TypographyComponent},
+  {path:"buttons", component:ButtonsComponent},
 ];
 
 @NgModule({
